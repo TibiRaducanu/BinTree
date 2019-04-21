@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -6287002357799567390
     second: Door
+  - first:
+      213: 5499845169743373932
+    second: Star
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +98,7 @@ TextureImporter:
         width: 19
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -103,6 +106,27 @@ TextureImporter:
       bones: []
       spriteID: 46b3cde7e03abc747bbfffde5a6a9d5c
       internalID: -6287002357799567390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70a38fe02f846e4cbbc9a0b930030b8
+      internalID: 5499845169743373932
       vertices: []
       indices: 
       edges: []
