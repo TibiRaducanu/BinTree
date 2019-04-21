@@ -20,7 +20,7 @@ public class LoadNewArea : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Application.LoadLevel(levelToLoad);
         }
