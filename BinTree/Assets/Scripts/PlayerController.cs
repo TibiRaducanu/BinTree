@@ -8,7 +8,10 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
     private Rigidbody2D playerRigidBody;
     private bool isMoving;
-    private Vector2 lastMove;
+    public Vector2 lastMove;
+
+    public Transform firePoint;
+    public GameObject star;
 
     // Start is called before the first frame update
     void Start()
@@ -55,5 +58,11 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetBool("IsMoving", isMoving);
         playerAnimator.SetFloat("LastMoveX", lastMove.x);
         playerAnimator.SetFloat("LastMoveY", lastMove.y);
+
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Instantiate(star, firePoint.position, firePoint.rotation);
+        }
     }
 }
