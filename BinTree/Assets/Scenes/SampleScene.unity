@@ -127,6 +127,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_Name
+      value: Door 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2120179711806325449, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -182,15 +192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+    - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
-      propertyPath: m_Name
-      value: Door 1 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: levelToLoad
+      value: Decision Scene Intro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb797051f4c67fc429be621655dd1121, type: 3}
@@ -201,6 +206,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_Name
+      value: Door 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2120179711806325449, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -256,21 +271,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: m_Name
-      value: Door 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: levelToLoad
-      value: BossFight1
-      objectReference: {fileID: 0}
     - target: {fileID: 7904884604991338133, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
       propertyPath: m_Size.x
@@ -281,6 +281,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: levelToLoad
+      value: BossFight1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb797051f4c67fc429be621655dd1121, type: 3}
 --- !u!1001 &1483019975
@@ -290,6 +295,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_Name
+      value: Door 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2120179711806325449, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -344,16 +359,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: m_Name
-      value: Door 1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}

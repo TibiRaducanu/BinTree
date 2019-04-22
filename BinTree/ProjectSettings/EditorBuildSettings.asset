@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle Demo.unity
     guid: 518f5433ae9c6794b942a39264fe3679
+  - enabled: 1
+    path: Assets/Scenes/Decision Scene.unity
+    guid: aff043348459d9749ad3a9c9e9a4c47b
+  - enabled: 1
+    path: Assets/Scenes/Decision Scene Intro.unity
+    guid: 7eeb2476edbffed488ac966342fa7611
   m_configObjects: {}
