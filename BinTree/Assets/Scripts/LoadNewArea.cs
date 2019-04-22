@@ -19,7 +19,7 @@ public class LoadNewArea : MonoBehaviour
 
     }
 
-    void ReadyToLoad()
+    public void ReadyToLoad()
     {
         readyToLoad = true;
     }

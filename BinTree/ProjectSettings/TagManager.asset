@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Fire
+  - GoldBricks
+  - GoldMoney
+  - GoldTree
+  - Tree
+  - TreeCrown
+  - TreeTrunk
+  - Exit
   layers:
   - Default
   - TransparentFX
