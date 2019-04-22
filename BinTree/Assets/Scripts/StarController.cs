@@ -16,7 +16,7 @@ public class StarController : MonoBehaviour
         starRigidBody = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<PlayerController>();
 
-        if(player.lastMove.x > 0f)
+        if(player.lastMove.x < 0f)
         {
             moveSpeed = -moveSpeed;
         }
