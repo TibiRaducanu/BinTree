@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetFloat("LastMoveY", lastMove.y);
 
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(star, firePoint.position, firePoint.rotation);
         }
