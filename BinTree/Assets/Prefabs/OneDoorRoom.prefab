@@ -3106,9 +3106,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4600217095568140024}
   - component: {fileID: 4600217095568140025}
+  - component: {fileID: -3419367519380786620}
   m_Layer: 0
   m_Name: OneDoorRoom
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3145,6 +3146,18 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &-3419367519380786620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600217095568140026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c13a6f12220b084bb9ac1f52828b890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4600217095769568275
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,6 +3508,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4600217095568140024}
     m_Modifications:
+    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: m_Name
+      value: Door 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2120179711806325449, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3549,11 +3567,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362606368020377366, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: m_Name
-      value: Door 1
       objectReference: {fileID: 0}
     - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}

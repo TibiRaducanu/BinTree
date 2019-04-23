@@ -10,7 +10,7 @@ public class LoadNewArea : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        readyToLoad = true;
+        readyToLoad = false;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class LoadNewArea : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" && readyToLoad)
+        if (other.gameObject.tag == "Player" && (readyToLoad || this.gameObject.tag == "DemoDoor"))
         {
             Application.LoadLevel(levelToLoad);
         }

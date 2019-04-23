@@ -197,3 +197,4 @@ MonoBehaviour:
   lastMove: {x: 0, y: 0}
   firePoint: {fileID: 655116745}
   star: {fileID: 2509929079434765571, guid: e530376b02104cc4da82da8981bacd3c, type: 3}
+  starCooldown: 0.5

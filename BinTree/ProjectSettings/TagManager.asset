@@ -16,6 +16,15 @@ TagManager:
   - Player Manager
   - Feet
   - Skeleton
+  - Top GUI
+  - Death Panel
+  - WeaponSlotImage
+  - HeartDisplay
+  - Tooltip
+  - UI_Canvas
+  - Door
+  - Room
+  - DemoDoor
   layers:
   - Default
   - TransparentFX

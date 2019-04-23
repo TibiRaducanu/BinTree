@@ -13,12 +13,16 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
     public GameObject star;
 
+    public float starCooldown;
+    private float starCooldownCount;
+
     // Start is called before the first frame update
     void Start()
     {
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
         lastMove = new Vector2();
+        starCooldownCount = starCooldown;
     }
 
     // Update is called once per frame
@@ -59,10 +63,19 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetFloat("LastMoveX", lastMove.x);
         playerAnimator.SetFloat("LastMoveY", lastMove.y);
 
+        if(starCooldownCount < 0f)
+        {
+            starCooldownCount = -1f;
+        } 
+        else
+        {
+            starCooldownCount -= Time.deltaTime;
+        }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && starCooldownCount < 0f)
         {
             Instantiate(star, firePoint.position, firePoint.rotation);
+            starCooldownCount = starCooldown;
         }
     }
 }
