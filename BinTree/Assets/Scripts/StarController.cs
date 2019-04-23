@@ -8,8 +8,6 @@ public class StarController : MonoBehaviour
     private Rigidbody2D starRigidBody;
     private PlayerController player;
 
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +28,16 @@ public class StarController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Enemy")
+        if (other.tag == "Enemy")
         {
             Destroy(other.gameObject);
+        }
+
+        if (other.tag == "Skeleton")
+        {
+            other.GetComponent<Animator>().SetBool("IsDead", true);
+            other.GetComponent<Animator>().SetBool("IsMoving", false);
+            Destroy(other.gameObject, 0.7f);
         }
 
         Destroy(gameObject);

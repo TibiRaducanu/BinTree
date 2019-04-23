@@ -271,6 +271,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
+        type: 3}
+      propertyPath: levelToLoad
+      value: BossFight Demo
+      objectReference: {fileID: 0}
     - target: {fileID: 7904884604991338133, guid: fb797051f4c67fc429be621655dd1121,
         type: 3}
       propertyPath: m_Size.x
@@ -280,11 +285,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7513690456571992290, guid: fb797051f4c67fc429be621655dd1121,
-        type: 3}
-      propertyPath: levelToLoad
-      value: BossFight1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb797051f4c67fc429be621655dd1121, type: 3}
