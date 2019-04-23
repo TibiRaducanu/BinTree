@@ -562,6 +562,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7980017278067188672, guid: a5205e249dc0d6a49ad6006d7b401d61,
+        type: 3}
+      propertyPath: m_Name
+      value: Door1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980017278067188672, guid: a5205e249dc0d6a49ad6006d7b401d61,
+        type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 8284011876717548596, guid: a5205e249dc0d6a49ad6006d7b401d61,
         type: 3}
       propertyPath: levelToLoad

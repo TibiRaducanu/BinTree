@@ -7,6 +7,7 @@ public class PuzzleDemoObjects : MonoBehaviour
     static private bool createdTree;
     static private bool createdGoldMoney;
     static private bool createdGoldTree;
+    static private bool finished;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,7 @@ public class PuzzleDemoObjects : MonoBehaviour
         createdTree = false;
         createdGoldMoney = false;
         createdGoldTree = false;
+        finished = false;
     }
 
     // Update is called once per frame
@@ -55,7 +57,14 @@ public class PuzzleDemoObjects : MonoBehaviour
             GameObject exitSign = Resources.Load<GameObject>("PuzzlePrefabs/ExitSign");
             GameObject exitPoint = GameObject.Find("ExitPoint");
             Instantiate(exitSign, exitPoint.transform.position, Quaternion.identity);
+            finished = true;
             return;
+        }
+
+        if (finished)
+        {
+            GameObject room = GameObject.FindGameObjectWithTag("Room");
+            room.GetComponent<LevelManager>().ReadyToLoad();
         }
     }
 }
