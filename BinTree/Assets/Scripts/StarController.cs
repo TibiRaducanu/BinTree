@@ -33,6 +33,16 @@ public class StarController : MonoBehaviour
             Destroy(other.gameObject);
         }
 
+        if (other.tag == "Boss")
+        {
+            GameObject boss = other.gameObject;
+            boss.GetComponent<SpawnAnnoyingEnemy>().DecreaseHealth();
+            if(boss.GetComponent<SpawnAnnoyingEnemy>().health < 0.001f)
+            {
+                Destroy(other.gameObject);
+            }
+        }
+
         if (other.tag == "Skeleton")
         {
             other.GetComponent<Animator>().SetBool("IsDead", true);

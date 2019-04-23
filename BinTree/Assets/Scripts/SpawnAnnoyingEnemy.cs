@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnAnnoyingEnemy : MonoBehaviour
 {
+    public float health;
     public float spawnInterval;
     private float spawnIntervalCount;
     public Object objectToSpawn;
@@ -23,5 +24,10 @@ public class SpawnAnnoyingEnemy : MonoBehaviour
             Instantiate(objectToSpawn, transform.position, Quaternion.identity);
             spawnIntervalCount = spawnInterval;
         }
+    }
+
+    public void DecreaseHealth()
+    {
+        health -= 1f;
     }
 }
