@@ -25,6 +25,7 @@ TagManager:
   - Door
   - Room
   - DemoDoor
+  - Boss
   layers:
   - Default
   - TransparentFX
