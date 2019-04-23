@@ -13,6 +13,9 @@ TagManager:
   - TreeCrown
   - TreeTrunk
   - Exit
+  - Player Manager
+  - Feet
+  - Skeleton
   layers:
   - Default
   - TransparentFX

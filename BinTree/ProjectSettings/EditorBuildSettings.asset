@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Decision Scene Intro.unity
     guid: 7eeb2476edbffed488ac966342fa7611
+  - enabled: 1
+    path: Assets/Scenes/BossFight Demo.unity
+    guid: 12717cc121813a6479506ab95d08e86d
   m_configObjects: {}
