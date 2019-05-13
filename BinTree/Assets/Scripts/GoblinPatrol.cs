@@ -88,7 +88,13 @@ public class GoblinPatrol : MonoBehaviour
                 SetAnimFloat(Vector2.down);
             }
         }
+    }
 
-
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(Application.loadedLevelName);
+        }
     }
 }

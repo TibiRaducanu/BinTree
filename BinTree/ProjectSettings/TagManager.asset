@@ -26,6 +26,7 @@ TagManager:
   - Room
   - DemoDoor
   - Boss
+  - Goblin
   layers:
   - Default
   - TransparentFX

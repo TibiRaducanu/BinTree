@@ -43,7 +43,7 @@ public class StarController : MonoBehaviour
             }
         }
 
-        if (other.tag == "Skeleton")
+        if (other.tag == "Skeleton" || other.tag == "Goblin")
         {
             other.GetComponent<Animator>().SetBool("IsDead", true);
             other.GetComponent<Animator>().SetBool("IsMoving", false);
