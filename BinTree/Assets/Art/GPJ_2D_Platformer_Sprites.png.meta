@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 5499845169743373932
     second: Star
+  - first:
+      213: -495724868804830365
+    second: EnemyStar
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -119,7 +122,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -127,6 +130,27 @@ TextureImporter:
       bones: []
       spriteID: b70a38fe02f846e4cbbc9a0b930030b8
       internalID: 5499845169743373932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStar
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 95
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98352514c7fc2cc4993de51bd21305e5
+      internalID: -495724868804830365
       vertices: []
       indices: 
       edges: []
