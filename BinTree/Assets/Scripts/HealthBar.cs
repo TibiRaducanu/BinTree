@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
+    // A class that handles the health system of the boss. Only one object is instantiated.
+    private static HealthBar healthBarSingleton = new HealthBar();
+    private HealthBar()
+    {
+
+    }
+    public static HealthBar getInstance()
+    {
+        return healthBarSingleton;
+    }
+
     private Transform bar;
     public float initialHealth;
     // Start is called before the first frame update
