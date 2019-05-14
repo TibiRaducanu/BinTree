@@ -66,6 +66,8 @@ public class GoblinPatrol : MonoBehaviour
         {
             goblinAnimator.SetBool("IsMoving", false);
         }
+
+        CheckDoorTransition(); // Checks if the door can be opened
     }
 
     private void SetAnimFloat(Vector2 setVector)
@@ -105,6 +107,16 @@ public class GoblinPatrol : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(Application.loadedLevelName);
+        }
+    }
+
+    private void CheckDoorTransition()
+    {
+        GameObject[] goblins = GameObject.FindGameObjectsWithTag("Goblin");
+        if(goblins.Length == 1)
+        {
+            GameObject door = GameObject.Find("Door 1");
+            door.GetComponent<LoadNewArea>().ReadyToLoad();
         }
     }
 }

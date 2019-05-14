@@ -95,6 +95,8 @@ public class SkeletonPatrol : MonoBehaviour
                 player.SetActive(true);
             }
         }
+
+        CheckDoorTransition(); // Checks if the door can be opened
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -104,6 +106,16 @@ public class SkeletonPatrol : MonoBehaviour
             other.gameObject.SetActive(false);
             reloading = true;
             player = other.gameObject;
+        }
+    }
+
+    private void CheckDoorTransition()
+    {
+        GameObject[] skeletons = GameObject.FindGameObjectsWithTag("Skeleton");
+        if (skeletons.Length == 1)
+        {
+            GameObject door = GameObject.Find("Door 1");
+            door.GetComponent<LoadNewArea>().ReadyToLoad();
         }
     }
 }

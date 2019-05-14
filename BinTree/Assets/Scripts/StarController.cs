@@ -40,6 +40,8 @@ public class StarController : MonoBehaviour
             if(boss.GetComponent<SpawnAnnoyingEnemy>().health < 0.001f)
             {
                 Destroy(other.gameObject);
+                GameObject door = GameObject.Find("Door 1");
+                door.GetComponent<LoadNewArea>().ReadyToLoad();
             }
         }
 
