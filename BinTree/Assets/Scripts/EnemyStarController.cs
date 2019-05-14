@@ -21,6 +21,11 @@ public class EnemyStarController : MonoBehaviour
         enemyStaRigidBody.velocity = new Vector2(moveSpeed, enemyStaRigidBody.velocity.y);
     }
 
+    public void ChangeStarDirection()
+    {
+        moveSpeed *= -1f;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")

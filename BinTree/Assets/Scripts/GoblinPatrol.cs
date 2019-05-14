@@ -14,6 +14,7 @@ public class GoblinPatrol : MonoBehaviour
     public float starCoolDown;
     private float starCoolDownCounter;
     public Transform firePoint;
+    public Transform firePoint2;
     public GameObject star;
     public float moveSpeed;
 
@@ -46,7 +47,16 @@ public class GoblinPatrol : MonoBehaviour
 
             if(starCoolDownCounter < 0f)
             {
-                Instantiate(star, firePoint.position, firePoint.rotation);
+                float moveDirection = goblinAnimator.GetFloat("MoveX");
+                if (moveDirection > 0f)
+                {
+                    Instantiate(star, firePoint.position, firePoint.rotation);
+                }
+                else /// The star direction changes when the enemy changes his position to the left
+                {
+                    GameObject auxStar = Instantiate(star, firePoint2.position, firePoint2.rotation);
+                    auxStar.GetComponent<EnemyStarController>().ChangeStarDirection();
+                }
                 starCoolDownCounter = starCoolDown;
             }
 
