@@ -42,33 +42,12 @@ public class SkeletonPatrol : MonoBehaviour
         if(!isDead)
             skeletonAnimator.SetBool("IsMoving", isMoving);
 
-        if(moveSpots[randomSpot].position.x < transform.position.x)
-        {
-            skeletonAnimator.SetFloat("MoveX", -1f);
-            skeletonAnimator.SetFloat("LastMoveX", -1f);
-            skeletonAnimator.SetFloat("LastMoveY", 0f);
-        }
-
-        if(moveSpots[randomSpot].position.x > transform.position.x)
-        {
-            skeletonAnimator.SetFloat("MoveX", 1f);
-            skeletonAnimator.SetFloat("LastMoveX", 1f);
-            skeletonAnimator.SetFloat("LastMoveY", 0f);
-        }
-
-        if (moveSpots[randomSpot].position.y < transform.position.y)
-        {
-            skeletonAnimator.SetFloat("MoveY", -1f);
-            skeletonAnimator.SetFloat("LastMoveX", 0f);
-            skeletonAnimator.SetFloat("LastMoveY", -1f);
-        }
-
-        if (moveSpots[randomSpot].position.y > transform.position.y)
-        {
-            skeletonAnimator.SetFloat("MoveY", 1f);
-            skeletonAnimator.SetFloat("LastMoveX", 0f);
-            skeletonAnimator.SetFloat("LastMoveY", 1f);
-        }
+        float signX = moveSpots[randomSpot].position.x < transform.position.x ? -1f : 1f;
+        float signY = moveSpots[randomSpot].position.y < transform.position.y ? -1f : 1f;
+        skeletonAnimator.SetFloat("MoveX", signX);
+        skeletonAnimator.SetFloat("LastMoveX", signX);
+        skeletonAnimator.SetFloat("LastMoveY", signY);
+        skeletonAnimator.SetFloat("MoveY", signY);
 
         if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
         {

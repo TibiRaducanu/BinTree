@@ -38,15 +38,6 @@ public class GoblinPatrol : MonoBehaviour
 
             if(starCoolDownCounter < 0f)
             {
-                starCoolDownCounter = -1f;
-            }
-            else
-            {
-                starCoolDownCounter -= Time.deltaTime;
-            }
-
-            if(starCoolDownCounter < 0f)
-            {
                 float moveDirection = goblinAnimator.GetFloat("MoveX");
                 if (moveDirection > 0f)
                 {
@@ -58,6 +49,10 @@ public class GoblinPatrol : MonoBehaviour
                     auxStar.GetComponent<EnemyStarController>().ChangeStarDirection();
                 }
                 starCoolDownCounter = starCoolDown;
+            }
+            else
+            {
+                starCoolDownCounter -= Time.deltaTime;
             }
 
             goblinRigidBody.MovePosition(aux);
