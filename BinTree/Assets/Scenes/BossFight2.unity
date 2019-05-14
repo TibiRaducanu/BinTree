@@ -325,6 +325,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8284011876717548596, guid: a5205e249dc0d6a49ad6006d7b401d61,
+        type: 3}
+      propertyPath: levelToLoad
+      value: BossFight1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5205e249dc0d6a49ad6006d7b401d61, type: 3}
 --- !u!1001 &1028910827
